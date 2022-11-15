@@ -50,10 +50,11 @@ The Calculator App itself tries to expand capabilities of modern calculator apps
  - [ ] Button Layouting
     - [ ] Responsive Design
     - [ ] Different navigatable Keypad presets
-    - [ ] Material 3 Incorporation
  - [ ] Display Rendering
     - [ ] Fraction Rendering
     - [ ] Square Root Rendering
+    - [ ] SVG or Canvas
+    - [ ] Keyboard Support
  - [ ] PWA features
     - [ ] App Icon (SVG) 
     - [ ] Installation

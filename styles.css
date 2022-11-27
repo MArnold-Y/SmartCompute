@@ -1,0 +1,29 @@
+body{
+    margin:0;
+}
+
+div,
+nav,
+header{
+    border: 1px solid black;
+}
+
+header{
+    height:5vh;
+}
+
+nav{
+    height:10vh;
+}
+
+#display{
+    height: 25vh;
+}
+
+#keypad{
+    height:60vh;
+}
+
+#MRow{
+    height:5vh;
+}

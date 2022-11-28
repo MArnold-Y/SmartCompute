@@ -1,4 +1,4 @@
-console.log("Script initialized");
+console.log("Script Initialized");
 
 const displayElements = {
 

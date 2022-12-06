@@ -47,6 +47,7 @@ The Calculator App itself tries to expand capabilities of modern calculator apps
  - [ ] Calculating
     - [ ] Asynchronous Calculating with time
     - [ ] Variable incorporation
+    - [ ] Term pronounciation (DE and EN)
  - [ ] Button Layouting
     - [ ] Responsive Design
     - [ ] Different navigatable Keypad presets

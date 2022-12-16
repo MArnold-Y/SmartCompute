@@ -1,40 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1" />
-    <title>SmartCompute</title>
-    <link href="styles.css" rel="stylesheet" />
-    <script src="script.js"></script>
-    <script src="term.js"></script>
-    <script src="display.js"></script>
-  </head>
-  <body>
-    <header>
-      Timer 
-      <button id="settings">Settings</button>
-    </header>
-    <main>
-      <div id="display">
-        Display
-        <div id="MRow">
-          MRow
-        </div>
-      </div>
-      <div id="keypad">
-        Keypad
-        <div id="numbers">
-          Numbers
-        </div>
-        <div id="arrows">
-          Arrows
-        </div>
-      </div>
-    </main>
-    <footer>
-      <nav>
-        Navigation Bar
-      </nav>
-    </footer>
-  </body>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1" />
+  <title>SmartCompute</title>
+  <link rel="icon" type="image/svg" href="icon.svg">
+  <link href="styles.css" rel="stylesheet" />
+  <script src="lib/term.js" defer></script>
+  <script src="lib/display.js" defer></script>
+  <script src="lib/input.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header>
+    Timer
+    <button id="settings">Settings</button>
+  </header>
+  <main>
+    <div id="display">
+      <!-- Display -->
+    </div>
+    <div id="mrow">
+      <!-- M-Row -->
+      <button id="mc" class="M">MC</button>
+      <button id="mr" class="M">MR</button>
+      <button id="m+" class="M">M+</button>
+      <button id="m-" class="M">M&minus;</button>
+      <button id="ms" class="M">MS</button>
+    </div>
+    <div id="keypad">
+      <button id="squareroot" class="key smallF">
+        &Sqrt;(x)
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100" height="100"></svg> -->
+      </button>
+      <button id="squared" class="key">x&sup2;</button>
+      <button id="fraction" class="key smallF">/</button>
+      <button id="arrow-up" class="key arrow"></button>
+      <button id="arrow-right" class="key arrow"></button>
+      <button id="leftParenthese" class="key smallF">(</button>
+      <button id="rightParenthese" class="key smallF">)</button>
+      <button id="modulo" class="key">%</button>
+      <button id="arrow-left" class="key arrow"></button>
+      <button id="arrow-down" class="key arrow"></button>
+      <button id="7" class="key">7</button>
+      <button id="8" class="key">8</button>
+      <button id="9" class="key">9</button>
+      <button id="divide" class="key bigF">&divide;</button>
+      <button id="allclear" class="key smallF">AC</button>
+      <button id="4" class="key">4</button>
+      <button id="5" class="key">5</button>
+      <button id="6" class="key">6</button>
+      <button id="multiply" class="key bigF">&times;</button>
+      <button id="delete" class="key smallF">DEL</button>
+      <button id="1" class="key">1</button>
+      <button id="2" class="key">2</button>
+      <button id="3" class="key">3</button>
+      <button id="subtract" class="key bigF">&minus;</button>
+      <button id="answer" class="key smallF">ANS</button>
+      <button id="0" class="key">0</button>
+      <button id="dot" class="key bigF">.</button>
+
+      <script async="false">
+        for (const el of Array.from(document.getElementsByClassName("arrow"))) {
+          el.insertAdjacentHTML('afterbegin', `
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="25" height="25" viewBox="0 0 100 100">
+              <path d = "M40,50 L60,30 V70 z" stroke-linejoin = "round" stroke-width = "10" />
+            </svg > `)
+        }
+      </script>
+
+      <button id="tenthPower" class="key smallF">&times;10ʸ</button>
+      <button id="add" class="key bigF">+</button>
+      <button id="equals" class="key bigF">=</button>
+
+    </div>
+  </main>
+  <footer>
+    <nav>
+      Navigation Bar
+    </nav>
+  </footer>
+</body>
+
 </html>

@@ -45,7 +45,6 @@ The Calculator App itself tries to expand capabilities of modern calculator apps
  ## Milestones
  
  - [ ] Calculating
-<<<<<<< main
     - [ ] Asynchronous Calculating pipeline with time measurement
        - [ ] Simplification
           - [ ] Variable seperation
@@ -73,11 +72,6 @@ The Calculator App itself tries to expand capabilities of modern calculator apps
           - [ ] Semi-live volatile currency value reflection
        - [ ] Mark favorite
        - [ ] Categorized and indexed, can be searched 
-=======
-    - [ ] Asynchronous Calculating with time
-    - [ ] Variable incorporation
-    - [ ] Term pronounciation (DE and EN)
->>>>>>> origin/main
  - [ ] Button Layouting
     - [ ] Responsive Design
        - [x] Mobile
